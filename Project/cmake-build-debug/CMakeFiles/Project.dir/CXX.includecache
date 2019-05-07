@@ -1,0 +1,40 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/Project/Stock.h
+list
+-
+iostream
+-
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/Project/main.cpp
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+map
+-
+iterator
+-
+vector
+-
+list
+-
+iomanip
+-
+locale
+-
+curl/curl.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/Project/curl/curl.h
+Stock.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/Project/Stock.h
+
