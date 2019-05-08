@@ -79,13 +79,9 @@ pair<string, string> getStart_End(string a_date) {
     return pair<string, string>(start_time, end_time);
 }
 
-bool fillin_price(map<string, Stock> Stock_dic) {
 
-}
-
-int main() {
+bool read_surprise(map<string, Stock>& Stock_dic){
     // -----------------Read Bloomberg Surprise Data--------------------
-    map<string, Stock> Stock_dic;
     ifstream surpirse_csv("announcements.csv");
     string line;
     if (surpirse_csv.is_open()) {
@@ -102,12 +98,17 @@ int main() {
             Stock s(results[0], results[1], results[2], stod(results[3]));
             Stock_dic.insert(pair<string, Stock>(results[1], s));
         }
-    } else
+    } else {
         cerr << "Read csv error" << endl;
-    cout << "Read Surpirse Finished" << endl;
+        return false;
+    }
+    Stock sp("S&P 500","SPY","2018-05-01",0.0);
+    Stock_dic.insert(pair<string, Stock>("SPY", sp));
     // -----------------Read Bloomberg Surprise Data--------------------
+    return true;
+}
 
-
+bool fillin_price(map<string, Stock>& Stock_dic) {
     map<string, Stock>::iterator itr = Stock_dic.begin();
 
     struct MemoryStruct data;
@@ -116,10 +117,6 @@ int main() {
 
     // file pointer to create file that store the data
     FILE *fp;
-
-////    // name of files
-////    const char outfilename[FILENAME_MAX] = "Output.txt";
-////    const char resultfilename[FILENAME_MAX] = "Results.txt";
 
     // declaration of an object CURL
     CURL *handle;
@@ -150,7 +147,7 @@ int main() {
             if (result != CURLE_OK) {
                 // if errors have occured, tell us what is wrong with result
                 fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(result));
-                return 1;
+                return false;
             }
 
             char cKey[] = "CrumbStore\":{\"crumb\":\"";
@@ -160,7 +157,6 @@ int main() {
             if (ptr3 != NULL)
                 *ptr3 = NULL;
             sCrumb = ptr2;
-            cout << sCrumb << endl;
 
             fp = fopen("cookies.txt", "r");
             char cCookies[100];
@@ -177,6 +173,8 @@ int main() {
             data.size = 0;
         }
         //----------------------------Get Crumb-----------------------
+        cout << "Retrieving Price" << endl;
+        cout << "*************************************************" << endl;
         while (true) {
             //break condition
             if (itr == Stock_dic.end())
@@ -188,8 +186,15 @@ int main() {
             string urlC = "&period2=";
             string urlD = "&interval=1d&events=history&crumb=";
             pair<string, string> time = getStart_End(itr->second.get_date());
-            string startTime = time.first;
-            string endTime = time.second;
+            string startTime, endTime;
+            if(itr->first == "SPY"){
+                startTime = getTimeinSeconds("2017-04-01T16:00:00");
+                endTime = getTimeinSeconds("2019-03-01T16:00:00");
+            }
+            else {
+                startTime = time.first;
+                endTime = time.second;
+            }
             string url = urlA + symbol + urlB + startTime + urlC + endTime + urlD + sCrumb;
             const char *cURL = url.c_str();
             const char *cookies = sCookies.c_str();
@@ -202,7 +207,7 @@ int main() {
             if (result != CURLE_OK) {
                 // if errors have occurred, tell us what is wrong with result
                 fprintf(stderr, "curl_easy_perform() failed: %s\n", curl_easy_strerror(result));
-                return 1;
+                return false;
             }
             //----------------------------Get Price_lst----------------------
 
@@ -223,7 +228,14 @@ int main() {
                 dValue = strtod(sValue.c_str(), NULL);
                 price_lst.insert(pair<string, double>(sDate, dValue));
             }
-
+            if(itr->first=="SPY"){
+                itr->second.set_price_lst(price_lst);
+                itr++;
+                free(data.memory);
+                data.memory = NULL;
+                data.size = 0;
+                continue;
+            }
             //choose first 60 and later 60
             auto front = price_lst.find(itr->second.get_date());
             auto after = price_lst.find(itr->second.get_date());
@@ -237,22 +249,48 @@ int main() {
             itr->second.set_price_lst(price_lst);
             counter++;
             if(counter%10 == 0)
-                cout << counter << endl;
+                cout << "*";
             itr++;
             free(data.memory);
             data.memory = NULL;
             data.size = 0;
         }
+        cout << endl;
     } else {
         fprintf(stderr, "Curl init failed!\n");
-        return 1;
+        return false;
     }
+
 
     // cleanup since you've used curl_easy_init
     curl_easy_cleanup(handle);
 
     // release resources acquired by curl_global_init()
     curl_global_cleanup();
+    return true;
+}
+
+int main() {
+    map<string, Stock> Stock_dic;
+    if(read_surprise(Stock_dic))
+        cout << "Read Surprise Finished" << endl;
+    vector<Stock*> Beat_group;
+    vector<Stock*> Meet_group;
+    vector<Stock*> Miss_group;
+    for(auto it = Stock_dic.begin(); it != Stock_dic.end(); it++){
+        if(it->second.get_surprise() >= 7.2)
+            Beat_group.push_back(&it->second);
+        else if(it->second.get_surprise() <= 1.7)
+            Miss_group.push_back(&it->second);
+        else
+            Meet_group.push_back(&it->second);
+    }
+    if(fillin_price(Stock_dic))
+        cout << "Read Price Finished" << endl;
+
+    map<string,double> price_lst = Stock_dic.find("SPY")->second.get_price_lst();
+    for(auto i = price_lst.begin(); i != price_lst.end(); i++)
+        cout << i->first << " " << i->second << endl;
 
     return 0;
 }
