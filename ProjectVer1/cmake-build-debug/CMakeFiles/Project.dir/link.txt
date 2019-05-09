@@ -1,0 +1,1 @@
+/Library/Developer/CommandLineTools/usr/bin/c++   -std=c++11 -lcurl -g -Wl,-search_paths_first -Wl,-headerpad_max_install_names  CMakeFiles/Project.dir/main.cpp.o CMakeFiles/Project.dir/StockDic.cpp.o  -o Project -lcurl 
