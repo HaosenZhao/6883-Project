@@ -15,6 +15,8 @@
 
 using namespace std;
 
+map<string, Stock> Stock_dic;
+
 struct MemoryStruct {
     char *memory;
     size_t size;
@@ -82,7 +84,7 @@ pair<string, string> getStart_End(string a_date) {
 }
 
 
-bool read_surprise(map<string, Stock> &Stock_dic) {
+bool read_surprise() {
     // -----------------Read Bloomberg Surprise Data--------------------
     ifstream surpirse_csv("announcements.csv");
     string line;
@@ -110,7 +112,7 @@ bool read_surprise(map<string, Stock> &Stock_dic) {
     return true;
 }
 
-bool fillin_price(map<string, Stock> &Stock_dic) {
+bool fillin_price() {
     map<string, Stock>::iterator itr = Stock_dic.begin();
 
     struct MemoryStruct data;
@@ -234,8 +236,9 @@ bool fillin_price(map<string, Stock> &Stock_dic) {
                 sValue = line.substr(line.find_last_of(',') + 1);
                 dValue = strtod(sValue.c_str(), NULL);
                 price_lst.insert(pair<string, double>(sDate, dValue));
-                if(dValue == 0)
+                if (dValue == 0) {
                     error_code = itr->first;
+                }
             }
             if (itr->first == "SPY") {
                 itr->second.set_price_lst(price_lst);
@@ -263,7 +266,7 @@ bool fillin_price(map<string, Stock> &Stock_dic) {
             free(data.memory);
             data.memory = NULL;
             data.size = 0;
-            if(error_code != "")
+            if (error_code != "")
                 Stock_dic.erase(error_code);
         }
         cout << endl;
@@ -281,7 +284,7 @@ bool fillin_price(map<string, Stock> &Stock_dic) {
     return true;
 }
 
-void fillin_AR(map<string, Stock> &Stock_dic) {
+void fillin_AR() {
     map<string, double> sp_price = Stock_dic.find("SPY")->second.get_price_lst();
     for (auto stocki = Stock_dic.begin(); stocki != Stock_dic.end(); stocki++) {
         map<string, double> this_price_lst = stocki->second.get_price_lst();
@@ -306,18 +309,16 @@ void fillin_AR(map<string, Stock> &Stock_dic) {
         }
         stocki->second.set_AR(AR);
     }
+    cout << "AR Calculated" << endl;
 }
 
-int myrandom(int i) { return rand() % i; }
 
 vector<int> random_generator(int size) {
     vector<int> a;
-    for (int i = 0; i < size + 1; i++)
+    for (int i = 0; i < size; i++)
         a.push_back(i);
-    for (int i = 0; i < size + 1; i++) {
-        int j = i + rand() % (size + 1 - i);
-        swap(a[i], a[j]);
-    }
+    srand(NULL);
+    random_shuffle(a.begin(),a.end());
     vector<int> top_30(a.begin(), a.begin() + 30);
     return top_30;
 }
@@ -325,60 +326,61 @@ vector<int> random_generator(int size) {
 double CAAR(vector<Stock *> group) {
     vector<Stock *> selected;
     vector<int> selected_index = random_generator(group.size());
-    for (int i = 0; i < selected_index.size(); i++)
+    for (int i = 0; i < selected_index.size(); i++) {
         selected.push_back(group[selected_index[i]]);
+    }
     vector<double> AAR;
     for (int t = 0; t < 120; t++) {
         double counter = 0;
-        for (int i = 0; i < selected.size(); i++)
-            counter += selected[i]->get_AR()[t];
+        for (int i = 0; i < selected.size(); i++) {
+            vector<double> AR = selected[i]->get_AR();
+            counter += AR[t];
+        }
         counter /= selected.size();
         AAR.push_back(counter);
     }
     double counter = 0;
     for (int i = 0; i < AAR.size(); i++)
         counter += AAR[i];
-    if(isnan(counter))
-        return 0.0;
     return counter;
 }
 
+double ave_CAAR(vector<Stock *> group, int times){
+    double CAAR_total= 0;
+    for (int i = 0; i < times; i++) {
+        CAAR_total += CAAR(group);
+    }
+    return CAAR_total/times;
+}
+
 int main() {
-    map<string, Stock> Stock_dic;
-    if (read_surprise(Stock_dic))
+    if (read_surprise())
         cout << "Read Surprise Finished" << endl;
-    if (fillin_price(Stock_dic))
+
+
+    if (fillin_price())
         cout << "Read Price Finished" << endl;
 
     vector<Stock *> Beat_group;
     vector<Stock *> Meet_group;
     vector<Stock *> Miss_group;
     for (auto it = Stock_dic.begin(); it != Stock_dic.end(); it++) {
+        if (it->first == "SPY")
+            continue;
         if (it->second.get_surprise() >= 5)
             Beat_group.push_back(&it->second);
-        else if (it->second.get_surprise() <= 0)
+        else if (it->second.get_surprise() <= -1)
             Miss_group.push_back(&it->second);
         else
             Meet_group.push_back(&it->second);
     }
 
-    fillin_AR(Stock_dic);
 
-    cout << "CAAR for Beat " <<  CAAR(Beat_group) << endl;
-    cout << "CAAR for Meet " << CAAR(Meet_group) << endl;
-    cout << "CAAR for Miss " << CAAR(Miss_group) << endl;
+    fillin_AR();
 
-//    double CAAR_beat = 0;
-//    double CAAR_meet = 0;
-//    double CAAR_miss = 0;
-//    for (int i = 0; i < 1000; i++) {
-//        CAAR_beat += CAAR(Beat_group);
-//        CAAR_meet += CAAR(Meet_group);
-//        CAAR_miss += CAAR(Miss_group);
-//    }
-//    cout << "CAAR for Beat " <<  CAAR_beat/1000 << endl;
-//    cout << "CAAR for Meet " << CAAR_meet/1000 << endl;
-//    cout << "CAAR for Miss " << CAAR_miss/1000 << endl;
+    cout << "CAAR for Beat " <<  ave_CAAR(Beat_group,1000) << endl;
+    cout << "CAAR for Meet " << ave_CAAR(Meet_group,1000) << endl;
+    cout << "CAAR for Miss " << ave_CAAR(Miss_group,1000) << endl;
 
 //    map<string,double> apple = Stock_dic.find("AAPL")->second.get_price_lst();
 //    vector<double> AR = Stock_dic.find("AAPL")->second.get_AR();
@@ -388,7 +390,6 @@ int main() {
 //        cout << ap_ptr->first <<" "<< *i << endl;
 //        ap_ptr++;
 //    }
-
 
     return 0;
 }
