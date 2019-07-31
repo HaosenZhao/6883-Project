@@ -1,0 +1,497 @@
+﻿Name,Ticker,Date,Surprise
+Kohl's Corp,KSS,2017-08-10,4.4
+Macy's Inc,M,2017-08-10,6.2
+Nordstrom Inc,JWN,2017-08-10,2.5
+NVIDIA Corp,NVDA,2017-08-10,23.9
+Home Depot Inc/The,HD,2017-08-15,1.5
+TJX Cos Inc/The,TJX,2017-08-15,1.1
+Target Corp,TGT,2017-08-16,3.1
+L Brands Inc,LB,2017-08-16,6.9
+Walmart Inc,WMT,2017-08-17,1
+Ross Stores Inc,ROST,2017-08-17,7
+Gap Inc/The,GPS,2017-08-17,11.7
+Foot Locker Inc,FL,2017-08-18,-30.8
+salesforce.com Inc,CRM,2017-08-22,4.4
+Lowe's Cos Inc,LOW,2017-08-23,-2.9
+PVH Corp,PVH,2017-08-23,2.9
+Tiffany & Co,TIF,2017-08-24,6.4
+Dollar Tree Inc,DLTR,2017-08-24,13.4
+Autodesk Inc,ADSK,2017-08-24,27.6
+Ulta Beauty Inc,ULTA,2017-08-24,3.5
+Best Buy Co Inc,BBY,2017-08-29,9.7
+Dollar General Corp,DG,2017-08-31,0.3
+Kroger Co/The,KR,2017-09-08,-0.5
+CarMax Inc,KMX,2017-09-22,3.6
+Red Hat Inc,RHT,2017-09-25,14.8
+Constellation Brands Inc,STZ,2017-10-05,14.1
+Xilinx Inc,XLNX,2017-10-25,4
+McKesson Corp,MCK,2017-10-26,17.3
+ABIOMED Inc,ABMD,2017-10-26,14
+Electronic Arts Inc,EA,2017-10-31,-112.2
+Qorvo Inc,QRVO,2017-11-01,-74.9
+Symantec Corp,SYMC,2017-11-01,-6.1
+Ralph Lauren Corp,RL,2017-11-02,5.6
+Capri Holdings Ltd,CPRI,2017-11-06,59.7
+Microchip Technology Inc,MCHP,2017-11-06,-0.8
+Take-Two Interactive Software,TTWO,2017-11-07,47.1
+DXC Technology Co,DXC,2017-11-07,26.6
+NetApp Inc,NTAP,2017-11-15,17.6
+JM Smucker Co/The,SJM,2017-11-16,6.4
+Medtronic PLC,MDT,2017-11-21,4.7
+Brown-Forman Corp,BF/B,2017-12-06,16.1
+H&R Block Inc,HRB,2017-12-06,1.6
+Oracle Corp,ORCL,2017-12-14,2.6
+Darden Restaurants Inc,DRI,2017-12-19,3.7
+FedEx Corp,FDX,2017-12-19,10.2
+General Mills Inc,GIS,2017-12-20,-0.1
+Conagra Brands Inc,CAG,2017-12-21,6
+Paychex Inc,PAYX,2017-12-21,-0.5
+NIKE Inc,NKE,2017-12-21,14.1
+Cintas Corp,CTAS,2017-12-21,3
+Lamb Weston Holdings Inc,LW,2018-01-04,2.7
+ResMed Inc,RMD,2018-01-22,31.4
+Procter & Gamble Co/The,PG,2018-01-23,4.5
+Lam Research Corp,LRCX,2018-01-24,17.7
+Maxim Integrated Products Inc,MXIM,2018-01-25,0.8
+Western Digital Corp,WDC,2018-01-25,3.5
+KLA-Tencor Corp,KLAC,2018-01-25,13.2
+Seagate Technology PLC,STX,2018-01-29,5.5
+Harris Corp,HRS,2018-01-30,20.8
+Automatic Data Processing Inc,ADP,2018-01-31,10.5
+Microsoft Corp,MSFT,2018-01-31,11.4
+Parker-Hannifin Corp,PH,2018-02-01,4.1
+Clorox Co/The,CLX,2018-02-02,-5.3
+Estee Lauder Cos Inc/The,EL,2018-02-02,5.3
+Sysco Corp,SYY,2018-02-05,20.6
+Tapestry Inc,TPR,2018-02-06,21.6
+Jack Henry & Associates Inc,JKHY,2018-02-06,-0.7
+Coty Inc,COTY,2018-02-08,38.5
+Broadridge Financial Solutions,BR,2018-02-08,44.7
+Cardinal Health Inc,CAH,2018-02-08,30.8
+News Corp,NWSA,2018-02-08,29
+Cisco Systems Inc,CSCO,2018-02-14,6.6
+Campbell Soup Co,CPB,2018-02-16,19.6
+Intuit Inc,INTU,2018-02-22,2.9
+Copart Inc,CPRT,2018-02-26,19.3
+AutoZone Inc,AZO,2018-02-27,-4.3
+Costco Wholesale Corp,COST,2018-03-07,-4.6
+Accenture PLC,ACN,2018-03-22,6.3
+Micron Technology Inc,MU,2018-03-22,2.8
+Walgreens Boots Alliance Inc,WBA,2018-03-28,11.1
+TE Connectivity Ltd,TEL,2018-04-25,4.3
+Viacom Inc,VIAB,2018-04-25,16.3
+Rockwell Automation Inc,ROK,2018-04-25,4
+QUALCOMM Inc,QCOM,2018-04-25,14.8
+Visa Inc,V,2018-04-25,9.1
+F5 Networks Inc,FFIV,2018-04-25,4.1
+Varian Medical Systems Inc,VAR,2018-04-25,11
+Raymond James Financial Inc,RJF,2018-04-25,0.3
+Helmerich & Payne Inc,HP,2018-04-26,25.5
+Air Products & Chemicals Inc,APD,2018-04-26,1.8
+DR Horton Inc,DHI,2018-04-26,18.7
+Franklin Resources Inc,BEN,2018-04-26,4.3
+Starbucks Corp,SBUX,2018-04-26,0
+Westrock Co,WRK,2018-04-27,-0.2
+Emerson Electric Co,EMR,2018-05-01,6.1
+Johnson Controls International,JCI,2018-05-01,2.3
+TransDigm Group Inc,TDG,2018-05-01,1.4
+Apple Inc,AAPL,2018-05-01,3.6
+AmerisourceBergen Corp,ABC,2018-05-02,6.7
+Hologic Inc,HOLX,2018-05-02,-0.7
+Atmos Energy Corp,ATO,2018-05-02,1.4
+Becton Dickinson and Co,BDX,2018-05-03,0.8
+Skyworks Solutions Inc,SWKS,2018-05-03,-6.1
+Tyson Foods Inc,TSN,2018-05-07,-2.7
+Jacobs Engineering Group Inc,JEC,2018-05-08,13.9
+Walt Disney Co/The,DIS,2018-05-08,8.4
+Agilent Technologies Inc,A,2018-05-14,1.1
+Applied Materials Inc,AMAT,2018-05-17,7.1
+Deere & Co,DE,2018-05-18,-5.2
+Hewlett Packard Enterprise Co,HPE,2018-05-22,10.7
+Synopsys Inc,SNPS,2018-05-23,-0.1
+Hormel Foods Corp,HRL,2018-05-24,-3
+HP Inc,HPQ,2018-05-29,0.8
+Analog Devices Inc,ADI,2018-05-30,5.7
+Keysight Technologies Inc,KEYS,2018-05-30,-0.4
+Broadcom Inc,AVGO,2018-06-07,4.3
+Cooper Cos Inc/The,COO,2018-06-07,0.8
+Adobe Inc,ADBE,2018-06-14,7.7
+Carnival Corp,CCL,2018-06-25,14.7
+IHS Markit Ltd,INFO,2018-06-26,7.2
+Lennar Corp,LEN,2018-06-26,260.7
+McCormick & Co Inc/MD,MKC,2018-06-28,10.3
+PepsiCo Inc,PEP,2018-07-10,5.8
+Fastenal Co,FAST,2018-07-11,5.9
+Delta Air Lines Inc,DAL,2018-07-12,3
+JPMorgan Chase & Co,JPM,2018-07-13,3.7
+PNC Financial Services Group I,PNC,2018-07-13,4
+Citigroup Inc,C,2018-07-13,3.6
+First Republic Bank/CA,FRC,2018-07-13,3.2
+Wells Fargo & Co,WFC,2018-07-13,-12.3
+BlackRock Inc,BLK,2018-07-16,1
+Bank of America Corp,BAC,2018-07-16,11.9
+JB Hunt Transport Services Inc,JBHT,2018-07-16,8
+Netflix Inc,NFLX,2018-07-16,7.1
+UnitedHealth Group Inc,UNH,2018-07-17,3.5
+Comerica Inc,CMA,2018-07-17,14.3
+Johnson & Johnson,JNJ,2018-07-17,1.4
+Omnicom Group Inc,OMC,2018-07-17,3.5
+Goldman Sachs Group Inc/The,GS,2018-07-17,28.4
+Prologis Inc,PLD,2018-07-17,0.3
+Progressive Corp/The,PGR,2018-07-17,3.6
+Charles Schwab Corp/The,SCHW,2018-07-17,3.1
+CSX Corp,CSX,2018-07-17,16.4
+United Continental Holdings In,UAL,2018-07-17,5.5
+Textron Inc,TXT,2018-07-18,24.8
+US Bancorp,USB,2018-07-18,1.5
+M&T Bank Corp,MTB,2018-07-18,2.8
+Morgan Stanley,MS,2018-07-18,12.6
+Northern Trust Corp,NTRS,2018-07-18,4.8
+Abbott Laboratories,ABT,2018-07-18,3
+WW Grainger Inc,GWW,2018-07-18,17.9
+International Business Machine,IBM,2018-07-18,1.4
+Kinder Morgan Inc/DE,KMI,2018-07-18,9.9
+SL Green Realty Corp,SLG,2018-07-18,0.2
+American Express Co,AXP,2018-07-18,0.7
+United Rentals Inc,URI,2018-07-18,11.9
+eBay Inc,EBAY,2018-07-18,3.5
+Crown Castle International Cor,CCI,2018-07-18,3.9
+BB&T Corp,BBT,2018-07-19,0.1
+Danaher Corp,DHR,2018-07-19,5.8
+Snap-on Inc,SNA,2018-07-19,5.6
+Fifth Third Bancorp,FITB,2018-07-19,10.3
+Bank of New York Mellon Corp/T,BK,2018-07-19,0.8
+KeyCorp,KEY,2018-07-19,9.5
+Dover Corp,DOV,2018-07-19,7.5
+PPG Industries Inc,PPG,2018-07-19,1.2
+Travelers Cos Inc/The,TRV,2018-07-19,-24.8
+Philip Morris International In,PM,2018-07-19,14.6
+Alliance Data Systems Corp,ADS,2018-07-19,8.1
+Union Pacific Corp,UNP,2018-07-19,1.7
+Genuine Parts Co,GPC,2018-07-19,0.9
+Nucor Corp,NUE,2018-07-19,-0.4
+Intuitive Surgical Inc,ISRG,2018-07-19,10.7
+People's United Financial Inc,PBCT,2018-07-19,1.3
+Capital One Financial Corp,COF,2018-07-19,22.6
+E*TRADE Financial Corp,ETFC,2018-07-19,7.4
+Celanese Corp,CE,2018-07-19,19.1
+Regions Financial Corp,RF,2018-07-20,2.1
+Stanley Black & Decker Inc,SWK,2018-07-20,27.3
+SunTrust Banks Inc,STI,2018-07-20,13.9
+State Street Corp,STT,2018-07-20,2.1
+Honeywell International Inc,HON,2018-07-20,5.3
+Citizens Financial Group Inc,CFG,2018-07-20,3.2
+Baker Hughes a GE Co,BHGE,2018-07-20,-27
+General Electric Co,GE,2018-07-20,8
+Schlumberger Ltd,SLB,2018-07-20,1.2
+Kansas City Southern,KSU,2018-07-20,1.9
+Hasbro Inc,HAS,2018-07-23,67.5
+Halliburton Co,HAL,2018-07-23,-0.7
+Illinois Tool Works Inc,ITW,2018-07-23,-0.1
+Alphabet Inc,GOOGL,2018-07-23,11.3
+Cadence Design Systems Inc,CDNS,2018-07-23,12.8
+Zions Bancorp NA,ZION,2018-07-23,-2.3
+Whirlpool Corp,WHR,2018-07-23,-13.5
+Centene Corp,CNC,2018-07-24,1.4
+Harley-Davidson Inc,HOG,2018-07-24,7.6
+Eli Lilly & Co,LLY,2018-07-24,15.7
+Biogen Inc,BIIB,2018-07-24,11.7
+Quest Diagnostics Inc,DGX,2018-07-24,-0.3
+Avery Dennison Corp,AVY,2018-07-24,7.2
+Waters Corp,WAT,2018-07-24,1.5
+United Technologies Corp,UTX,2018-07-24,6.3
+IQVIA Holdings Inc,IQV,2018-07-24,4.2
+Sherwin-Williams Co/The,SHW,2018-07-24,1.5
+Interpublic Group of Cos Inc/T,IPG,2018-07-24,1.2
+Verizon Communications Inc,VZ,2018-07-24,5
+3M Co,MMM,2018-07-24,0.5
+Kimberly-Clark Corp,KMB,2018-07-24,1.3
+Lockheed Martin Corp,LMT,2018-07-24,9.9
+PACCAR Inc,PCAR,2018-07-24,11.7
+Wabtec Corp,WAB,2018-07-24,3
+Texas Instruments Inc,TXN,2018-07-24,7.4
+Stryker Corp,SYK,2018-07-24,1.9
+Chubb Ltd,CB,2018-07-24,2.2
+AT&T Inc,T,2018-07-24,7.4
+Robert Half International Inc,RHI,2018-07-24,4.7
+Total System Services Inc,TSS,2018-07-24,3.8
+Ameriprise Financial Inc,AMP,2018-07-24,4.3
+Equity Residential,EQR,2018-07-24,1.4
+Thermo Fisher Scientific Inc,TMO,2018-07-25,4.9
+Anthem Inc,ANTM,2018-07-25,2.2
+Hilton Worldwide Holdings Inc,HLT,2018-07-25,-0.4
+Boston Scientific Corp,BSX,2018-07-25,19.5
+Ingersoll-Rand PLC,IR,2018-07-25,7.4
+Northrop Grumman Corp,NOC,2018-07-25,2.4
+DTE Energy Co,DTE,2018-07-25,21.9
+AO Smith Corp,AOS,2018-07-25,6.5
+Laboratory Corp of America Hol,LH,2018-07-25,1.7
+American Electric Power Co Inc,AEP,2018-07-25,13.2
+United Parcel Service Inc,UPS,2018-07-25,0.6
+Nasdaq Inc,NDAQ,2018-07-25,0.8
+Pentair PLC,PNR,2018-07-25,2.9
+General Motors Co,GM,2018-07-25,2
+Coca-Cola Co/The,KO,2018-07-25,1.2
+Waste Management Inc,WM,2018-07-25,1.8
+Corning Inc,GLW,2018-07-25,4.1
+General Dynamics Corp,GD,2018-07-25,5.3
+FLIR Systems Inc,FLIR,2018-07-25,12.7
+Hess Corp,HES,2018-07-25,24.1
+Rollins Inc,ROL,2018-07-25,-4.1
+Boeing Co/The,BA,2018-07-25,1.7
+NextEra Energy Inc,NEE,2018-07-25,2
+Huntington Bancshares Inc/OH,HBAN,2018-07-25,2.7
+T Rowe Price Group Inc,TROW,2018-07-25,3.7
+Amphenol Corp,APH,2018-07-25,5.6
+Norfolk Southern Corp,NSC,2018-07-25,7.3
+Freeport-McMoRan Inc,FCX,2018-07-25,10.1
+HCA Healthcare Inc,HCA,2018-07-25,5.7
+Align Technology Inc,ALGN,2018-07-25,19.5
+Gilead Sciences Inc,GILD,2018-07-25,-1.6
+Vertex Pharmaceuticals Inc,VRTX,2018-07-25,25
+Citrix Systems Inc,CTXS,2018-07-25,6.5
+Mattel Inc,MAT,2018-07-25,-82.4
+Mohawk Industries Inc,MHK,2018-07-25,-9.9
+Facebook Inc,FB,2018-07-25,1.5
+Mondelez International Inc,MDLZ,2018-07-25,4.7
+Duke Realty Corp,DRE,2018-07-25,1.5
+Torchmark Corp,TMK,2018-07-25,1.3
+TechnipFMC PLC,FTI,2018-07-25,-27.8
+PayPal Holdings Inc,PYPL,2018-07-25,2.7
+Ford Motor Co,F,2018-07-25,-11.5
+Universal Health Services Inc,UHS,2018-07-25,3.3
+Equifax Inc,EFX,2018-07-25,1.1
+O'Reilly Automotive Inc,ORLY,2018-07-25,5.5
+Advanced Micro Devices Inc,AMD,2018-07-25,9.4
+Packaging Corp of America,PKG,2018-07-25,5.7
+Allegion PLC,ALLE,2018-07-26,4.8
+LKQ Corp,LKQ,2018-07-26,5.9
+Xcel Energy Inc,XEL,2018-07-26,10.1
+Alaska Air Group Inc,ALK,2018-07-26,0.7
+Xerox Corp,XRX,2018-07-26,-3.6
+Southwest Airlines Co,LUV,2018-07-26,2.9
+Nielsen Holdings PLC,NLSN,2018-07-26,-13
+Alexion Pharmaceuticals Inc,ALXN,2018-07-26,20.8
+BorgWarner Inc,BWA,2018-07-26,7.6
+Allergan PLC,AGN,2018-07-26,7
+PulteGroup Inc,PHM,2018-07-26,19.3
+Valero Energy Corp,VLO,2018-07-26,8.8
+L3 Technologies Inc,LLL,2018-07-26,6.1
+Martin Marietta Materials Inc,MLM,2018-07-26,-2
+Under Armour Inc,UAA,2018-07-26,5.9
+Roper Technologies Inc,ROP,2018-07-26,6.8
+Raytheon Co,RTN,2018-07-26,18.6
+Invesco Ltd,IVZ,2018-07-26,0
+Newmont Goldcorp Corp,NEM,2018-07-26,7.9
+International Paper Co,IP,2018-07-26,9.7
+Bristol-Myers Squibb Co,BMY,2018-07-26,15.6
+CME Group Inc,CME,2018-07-26,1.2
+CMS Energy Corp,CMS,2018-07-26,16.8
+ConocoPhillips,COP,2018-07-26,0.6
+Marsh & McLennan Cos Inc,MMC,2018-07-26,-1
+Comcast Corp,CMCSA,2018-07-26,8
+Altria Group Inc,MO,2018-07-26,0.8
+Kimco Realty Corp,KIM,2018-07-26,3.4
+Hershey Co/The,HSY,2018-07-26,3.8
+Marathon Petroleum Corp,MPC,2018-07-26,11.7
+S&P Global Inc,SPGI,2018-07-26,1.9
+Baxter International Inc,BAX,2018-07-26,8.6
+American Airlines Group Inc,AAL,2018-07-26,2.5
+Celgene Corp,CELG,2018-07-26,2.2
+McDonald's Corp,MCD,2018-07-26,3.3
+Tractor Supply Co,TSCO,2018-07-26,5.3
+Mastercard Inc,MA,2018-07-26,8.3
+Amazon.com Inc,AMZN,2018-07-26,103.7
+Amgen Inc,AMGN,2018-07-26,7.7
+Mettler-Toledo International I,MTD,2018-07-26,1.4
+VeriSign Inc,VRSN,2018-07-26,4
+Expedia Group Inc,EXPE,2018-07-26,-9.5
+Digital Realty Trust Inc,DLR,2018-07-26,3.5
+Edison International,EIX,2018-07-26,1.6
+Cincinnati Financial Corp,CINF,2018-07-26,34.6
+Fortune Brands Home & Security,FBHS,2018-07-26,-1.6
+Intel Corp,INTC,2018-07-26,7.9
+Leggett & Platt Inc,LEG,2018-07-26,2.1
+Republic Services Inc,RSG,2018-07-26,-2.4
+Chipotle Mexican Grill Inc,CMG,2018-07-26,4
+Hartford Financial Services Gr,HIG,2018-07-26,9.3
+Aflac Inc,AFL,2018-07-26,8.1
+Edwards Lifesciences Corp,EW,2018-07-26,9.7
+Arthur J Gallagher & Co,AJG,2018-07-26,-1.4
+Principal Financial Group Inc,PFG,2018-07-26,-1.5
+Jefferies Financial Group Inc,JEF,2018-07-26,147.1
+Juniper Networks Inc,JNPR,2018-07-26,9.6
+SVB Financial Group,SIVB,2018-07-26,14.1
+Fortive Corp,FTV,2018-07-26,1.9
+Discover Financial Services,DFS,2018-07-26,1.7
+Eastman Chemical Co,EMN,2018-07-26,0.7
+National Oilwell Varco Inc,NOV,2018-07-26,200
+Weyerhaeuser Co,WY,2018-07-27,2.3
+Aon PLC,AON,2018-07-27,4.1
+Iron Mountain Inc,IRM,2018-07-27,5.7
+Welltower Inc,WELL,2018-07-27,0.5
+Zimmer Biomet Holdings Inc,ZBH,2018-07-27,2.3
+Cabot Oil & Gas Corp,COG,2018-07-27,-33.7
+Synchrony Financial,SYF,2018-07-27,12.2
+Merck & Co Inc,MRK,2018-07-27,2.8
+Twitter Inc,TWTR,2018-07-27,5.6
+Colgate-Palmolive Co,CL,2018-07-27,-0.1
+Phillips 66,PSX,2018-07-27,28.1
+Moody's Corp,MCO,2018-07-27,8.7
+Ventas Inc,VTR,2018-07-27,7.8
+AbbVie Inc,ABBV,2018-07-27,1.2
+Exxon Mobil Corp,XOM,2018-07-27,-26.7
+Chevron Corp,CVX,2018-07-27,-7.9
+Loews Corp,L,2018-07-30,10.8
+Simon Property Group Inc,SPG,2018-07-30,2.7
+Caterpillar Inc,CAT,2018-07-30,8.6
+Affiliated Managers Group Inc,AMG,2018-07-30,0.5
+SBA Communications Corp,SBAC,2018-07-30,-39.3
+Illumina Inc,ILMN,2018-07-30,28.4
+Alexandria Real Estate Equitie,ARE,2018-07-30,0.1
+Unum Group,UNM,2018-07-30,3
+AvalonBay Communities Inc,AVB,2018-07-30,1.6
+Everest Re Group Ltd,RE,2018-07-30,0.5
+UDR Inc,UDR,2018-07-30,1.9
+Vornado Realty Trust,VNO,2018-07-30,3.5
+WellCare Health Plans Inc,WCG,2018-07-31,21.6
+Eaton Corp PLC,ETN,2018-07-31,4.8
+Pfizer Inc,PFE,2018-07-31,8.9
+Aptiv PLC,APTV,2018-07-31,3.2
+Xylem Inc/NY,XYL,2018-07-31,3.1
+AMETEK Inc,AME,2018-07-31,6.1
+American Tower Corp,AMT,2018-07-31,-7.3
+Incyte Corp,INCY,2018-07-31,-32.1
+Archer-Daniels-Midland Co,ADM,2018-07-31,33.2
+Charter Communications Inc,CHTR,2018-07-31,40.9
+Masco Corp,MAS,2018-07-31,-2
+Fidelity National Information,FIS,2018-07-31,1.7
+WEC Energy Group Inc,WEC,2018-07-31,8.5
+Cummins Inc,CMI,2018-07-31,-9.4
+IPG Photonics Corp,IPGP,2018-07-31,-1.9
+Arconic Inc,ARNC,2018-07-31,24.6
+Vulcan Materials Co,VMC,2018-07-31,-9.8
+Ecolab Inc,ECL,2018-07-31,0.1
+Fiserv Inc,FISV,2018-07-31,1.8
+Akamai Technologies Inc,AKAM,2018-07-31,4.1
+Extra Space Storage Inc,EXR,2018-07-31,0.4
+Devon Energy Corp,DVN,2018-07-31,-6.3
+Verisk Analytics Inc,VRSK,2018-07-31,5.9
+Anadarko Petroleum Corp,APC,2018-07-31,-7.5
+ONEOK Inc,OKE,2018-07-31,1.3
+Eversource Energy,ES,2018-07-31,1.6
+CH Robinson Worldwide Inc,CHRW,2018-07-31,6.4
+FirstEnergy Corp,FE,2018-07-31,18.5
+Boston Properties Inc,BXP,2018-07-31,1.2
+Gartner Inc,IT,2018-08-01,7.5
+Hanesbrands Inc,HBI,2018-08-01,-1.5
+IDEXX Laboratories Inc,IDXX,2018-08-01,5.5
+NiSource Inc,NI,2018-08-01,-24.7
+Entergy Corp,ETR,2018-08-01,37.6
+Molson Coors Brewing Co,TAP,2018-08-01,2.6
+Garmin Ltd,GRMN,2018-08-01,14.1
+Public Service Enterprise Grou,PEG,2018-08-01,1.6
+Dominion Energy Inc,D,2018-08-01,9.6
+Humana Inc,HUM,2018-08-01,4.9
+DaVita Inc,DVA,2018-08-01,8.8
+Wynn Resorts Ltd,WYNN,2018-08-01,-20.2
+TripAdvisor Inc,TRIP,2018-08-01,-42.6
+Realty Income Corp,O,2018-08-01,-0.1
+Macerich Co/The,MAC,2018-08-01,0
+Lincoln National Corp,LNC,2018-08-01,-3.6
+MetLife Inc,MET,2018-08-01,10.8
+Concho Resources Inc,CXO,2018-08-01,32.5
+Public Storage,PSA,2018-08-01,-1.3
+Essex Property Trust Inc,ESS,2018-08-01,1.3
+Fortinet Inc,FTNT,2018-08-01,-17.4
+PerkinElmer Inc,PKI,2018-08-01,5.4
+Williams Cos Inc/The,WMB,2018-08-01,0
+Federal Realty Investment Trus,FRT,2018-08-01,1.4
+Prudential Financial Inc,PRU,2018-08-01,-1.9
+Allstate Corp/The,ALL,2018-08-01,25.2
+Mid-America Apartment Communit,MAA,2018-08-01,4.4
+FMC Corp,FMC,2018-08-01,3.7
+Marathon Oil Corp,MRO,2018-08-01,-23.9
+CF Industries Holdings Inc,CF,2018-08-01,39.7
+American Water Works Co Inc,AWK,2018-08-01,2.6
+Apache Corp,APA,2018-08-01,24.4
+Cigna Corp,CI,2018-08-02,17.6
+Willis Towers Watson PLC,WLTW,2018-08-02,-0.7
+DowDuPont Inc,DWDP,2018-08-02,5.7
+Cognizant Technology Solutions,CTSH,2018-08-02,-24.5
+Ball Corp,BLL,2018-08-02,-1
+HollyFrontier Corp,HFC,2018-08-02,-10.8
+NRG Energy Inc,NRG,2018-08-02,17.7
+Regeneron Pharmaceuticals Inc,REGN,2018-08-02,2.4
+Teleflex Inc,TFX,2018-08-02,2.6
+Duke Energy Corp,DUK,2018-08-02,-8.7
+CBRE Group Inc,CBRE,2018-08-02,4.1
+Global Payments Inc,GPN,2018-08-02,5.7
+Quanta Services Inc,PWR,2018-08-02,5
+Exelon Corp,EXC,2018-08-02,15.8
+Sealed Air Corp,SEE,2018-08-02,9.8
+Zoetis Inc,ZTS,2018-08-02,9.7
+Church & Dwight Co Inc,CHD,2018-08-02,5.2
+Yum! Brands Inc,YUM,2018-08-02,10.2
+MSCI Inc,MSCI,2018-08-02,1.2
+Huntington Ingalls Industries,HII,2018-08-02,30.4
+Intercontinental Exchange Inc,ICE,2018-08-02,0.9
+MGM Resorts International,MGM,2018-08-02,-3.4
+Royal Caribbean Cruises Ltd,RCL,2018-08-02,14
+HCP Inc,HCP,2018-08-02,3.1
+Kellogg Co,K,2018-08-02,8.5
+Cerner Corp,CERN,2018-08-02,2.8
+CBS Corp,CBS,2018-08-02,1
+Arista Networks Inc,ANET,2018-08-02,-1.4
+FleetCor Technologies Inc,FLT,2018-08-02,-23.6
+Western Union Co/The,WU,2018-08-02,-1.9
+Activision Blizzard Inc,ATVI,2018-08-02,38.3
+Motorola Solutions Inc,MSI,2018-08-02,-16.9
+Regency Centers Corp,REG,2018-08-02,-2.3
+Fluor Corp,FLR,2018-08-02,14.9
+EOG Resources Inc,EOG,2018-08-02,10.1
+American International Group I,AIG,2018-08-02,-13.2
+Consolidated Edison Inc,ED,2018-08-02,10.5
+Apartment Investment & Managem,AIV,2018-08-02,-1.1
+Alliant Energy Corp,LNT,2018-08-02,-4.9
+DISH Network Corp,DISH,2018-08-03,17.4
+LyondellBasell Industries NV,LYB,2018-08-03,14.8
+CenterPoint Energy Inc,CNP,2018-08-03,-6.5
+Noble Energy Inc,NBL,2018-08-03,-23.8
+Cboe Global Markets Inc,CBOE,2018-08-03,1.5
+Kraft Heinz Co/The,KHC,2018-08-03,9.2
+Ameren Corp,AEE,2018-08-03,25.3
+Pinnacle West Capital Corp,PNW,2018-08-03,0.8
+Berkshire Hathaway Inc,BRK/A,2018-08-04,24.5
+Newell Brands Inc,NWL,2018-08-06,5.7
+Sempra Energy,SRE,2018-08-06,13.6
+Henry Schein Inc,HSIC,2018-08-06,2.3
+Mosaic Co/The,MOS,2018-08-06,5.5
+ANSYS Inc,ANSS,2018-08-06,29.2
+Marriott International Inc/MD,MAR,2018-08-06,26.6
+AES Corp/VA,AES,2018-08-07,-10.4
+DENTSPLY SIRONA Inc,XRAY,2018-08-07,1.9
+Discovery Inc,DISCA,2018-08-07,-23.3
+PPL Corp,PPL,2018-08-07,0.9
+Expeditors International of Wa,EXPD,2018-08-07,1.2
+Pioneer Natural Resources Co,PXD,2018-08-07,-5.9
+International Flavors & Fragra,IFF,2018-08-07,4
+Albemarle Corp,ALB,2018-08-07,6.6
+Assurant Inc,AIZ,2018-08-07,16.5
+Cimarex Energy Co,XEC,2018-08-07,-3.1
+Host Hotels & Resorts Inc,HST,2018-08-07,5.1
+CVS Health Corp,CVS,2018-08-08,5.5
+Southern Co/The,SO,2018-08-08,17
+Mylan NV,MYL,2018-08-08,-12.6
+Diamondback Energy Inc,FANG,2018-08-08,-2.9
+Flowserve Corp,FLS,2018-08-08,22.8
+Monster Beverage Corp,MNST,2018-08-08,2.6
+Equinix Inc,EQIX,2018-08-08,-7.2
+Nektar Therapeutics,NKTR,2018-08-08,6
+CenturyLink Inc,CTL,2018-08-08,7.4
+Occidental Petroleum Corp,OXY,2018-08-08,-7.9
+Evergy Inc,EVRG,2018-08-08,3.4
+Perrigo Co PLC,PRGO,2018-08-09,2
+Norwegian Cruise Line Holdings,NCLH,2018-08-09,17.5
+Booking Holdings Inc,BKNG,2018-08-09,19
+Advance Auto Parts Inc,AAP,2018-08-14,5.8

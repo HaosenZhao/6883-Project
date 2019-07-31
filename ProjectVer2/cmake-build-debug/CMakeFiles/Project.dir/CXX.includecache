@@ -1,0 +1,82 @@
+#IncludeRegexLine: ^[ 	]*[#%][ 	]*(include|import)[ 	]*[<"]([^">]+)([">])
+
+#IncludeRegexScan: ^.*$
+
+#IncludeRegexComplain: ^$
+
+#IncludeRegexTransform: 
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Calculation.h
+vector
+-
+Stock.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Stock.h
+cstdlib
+-
+ctime
+-
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Matrix.h
+vector
+-
+iostream
+-
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Stock.h
+list
+-
+iostream
+-
+map
+-
+vector
+-
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/StockDic.h
+iostream
+-
+string
+-
+fstream
+-
+sstream
+-
+map
+-
+iterator
+-
+vector
+-
+list
+-
+iomanip
+-
+locale
+-
+algorithm
+-
+random
+-
+curl/curl.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/curl/curl.h
+Stock.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Stock.h
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/gnuplot.h
+vector
+-
+
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/main.cpp
+curl/curl.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/curl/curl.h
+Stock.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Stock.h
+StockDic.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/StockDic.h
+Calculation.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Calculation.h
+gnuplot.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/gnuplot.h
+Matrix.h
+/Users/ZhangYin/Desktop/CLASS/Semester/2019 SPRING/6883 C++/Project/ProjectVer2/Matrix.h
+
